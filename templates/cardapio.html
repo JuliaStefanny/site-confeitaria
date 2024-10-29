@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Sempre Doce</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Cardápio da Sempre Doce</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Início</a></li>
+                <li><a href="#bolos">Bolos</a></li>
+                <li><a href="#doces">Doces</a></li>
+                <li><a href="#pães">Pães de Mel</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bolos">
+        <h2>Bolos</h2>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/bolo_chocolate.jpg')}}" alt="Bolo de chocolate">
+            <div>
+                <h3>Bolo de Chocolate</h3>
+                <p>Delicioso bolo de chocolate com recheio cremoso.</p>
+                <span>Preço: R$ 30,00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/bolo_cenoura.jpg')}}" alt="Bolo de Cenoura">
+            <div>
+                <h3>Bolo de Cenoura</h3>
+                <p>Bolo de cenoura com cobertura de chocolate.</p>
+                <span>Preço: R$ 28,00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/bolo_limao.jpg')}}" alt="Bolo de Limão">
+            <div>
+                <h3>Bolo de Limão</h3>
+                <p>Bolo de limão com cobertura de merengue.</p>
+                <span>Preço: R$ 25,00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="doces">
+        <h2>Doces</h2>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/brigadeiro.png')}}" alt="Brigadeiro">
+            <div>
+                 <h3>Brigadeiro</h3>
+                 <p>Tradicional brigadeiro de chocolate.</p>
+                 <span>Preço: R$ 3,00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/beijinho.jpg')}}" alt="Beijinho">
+            <div>
+                <h3>Beijinho</h3>
+                <p>Doce de coco com cobertura de granulado.</p>
+                <span>Preço: R$ 3,00</span>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/trufa.jpg')}}" alt="Trufa">
+            <div>
+                <h3>Trufa</h3>
+                <p>Trufas variadas com recheios especiais.</p>
+                <span>Preço: R$ 5,00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="pães">
+        <h2>Pães de Mel</h2>
+        <div class="item">
+            <img src="{{ url_for('static', filename='img/pao_mel.jpg')}}" alt="Pão de Mel Tradicional">
+            <div>
+                 <h3>Pão de Mel Tradicional</h3>
+                 <p>Pão de mel recheado com doce de leite e coberto com chocolate.</p>
+                 <span>Preço: R$ 6,00</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+

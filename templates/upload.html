@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo TXT</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload de Arquivo TXT</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <label for="file">Escolha um arquivo .txt:</label>
+                <input type="file" id="file" name="file" accept=".txt" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="info">
+            <p>Apenas arquivos de texto (.txt) são aceitos.</p>
+            <p>O tamanho máximo do arquivo é de 2MB.</p>
+        </div>
+    </div>
+</body>
+</html>
